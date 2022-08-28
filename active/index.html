@@ -14,7 +14,31 @@
 	</head>
 	<body>
 	<div class="mainstyle">
-	<center><h2>文件系统激活页面</h2></center>
+	<script>
+function getCookie(cookie_name)
+{if(cookie_name!=''){
+    var allcookies = document.cookie;
+    var cookie_pos = allcookies.indexOf(cookie_name);
+    if (cookie_pos != -1)
+    {
+        cookie_pos += cookie_name.length + 1;
+        var cookie_end = allcookies.indexOf(";", cookie_pos);
+  
+        if (cookie_end == -1)
+        {
+            cookie_end = allcookies.length;
+        }
+  
+        var value = unescape(allcookies.substring(cookie_pos, cookie_end));
+    }
+    return value;}
+}
+    		window.onload = function(){
+        		if(getCookie("Unlock")=="Active Feinen-2019~2022"){
+				window.location.href="https://scratch-cmd.github.io/tools/active/secret"; }
+    		}
+		</script>
+	<center><h2>激活页面</h2></center>
         <p align="center"><label class="label_input" type="text"></label><input type="text" id="username" class="text_field" placeholder="USERNAME"/></p>
         <p align="center"><label class="label_input" type="password"></label><input type="password" id="password" class="text_field" placeholder="PASSWORD"/></p>
         <p align="center"><button type="button" onclick="PWD()">激活</button>&nbsp;&nbsp;&nbsp;<button type="button" onclick="window.location.href='https://scratch-cmd.github.io/tools/active/secret'">进入</button></p>
