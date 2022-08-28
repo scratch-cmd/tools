@@ -1,0 +1,37 @@
+<title>查cookie</title>
+<center><h1 hidden='hidden' id='cyc'>Cookie查一查</h1>
+<button id='start' onclick="chkkfz()">×</button>
+<input type="text" id="cname" hidden='hidden'></input>
+<button hidden='hidden' id='btn' onclick="document.getElementById('Unlock').innerHTML=getCookie(document.getElementById('cname').value)">查</button>
+<p><span id="Unlock"></span></p></center>
+<script>
+	function chkkfz(){
+	if(getCookie("DebugMode")=='KaiFaMoShi-Debug'){
+		var cyc=document.getElementById("cname");
+		var ipt=document.getElementById("ipt");
+		var btn=document.getElementById("btn");
+		var stt=document.getElementById("start");
+		cyc.hidden=''
+		ipt.hidden=''
+		btn.hidden=''
+		stt.hidden='hidden'
+	}}
+function getCookie(cookie_name)
+{if(cookie_name!=''){
+    var allcookies = document.cookie;
+    var cookie_pos = allcookies.indexOf(cookie_name);   //索引的长度
+    if (cookie_pos != -1)
+    {
+        cookie_pos += cookie_name.length + 1;
+        var cookie_end = allcookies.indexOf(";", cookie_pos);
+  
+        if (cookie_end == -1)
+        {
+            cookie_end = allcookies.length;
+        }
+  
+        var value = unescape(allcookies.substring(cookie_pos, cookie_end));
+    }
+    return cookie_name+'的值：'+value;}
+}
+</script>
