@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>登陆测试</title>
+	</head>
+	<body>
+        <p align="center"><label class="label_input" type="text"></label><input type="text" id="username" class="text_field" placeholder="USERNAME"/></p>
+        <p align="center"><label class="label_input" type="password"></label><input type="password" id="password" class="text_field" placeholder="PASSWORD"/></p>
+        <p align="center"><button type="button" onclick="PWD()">激活</button><button type="button" onclick="window.location.href='https://scratch-cmd.github.io/tools/secret'">进入</button></p>
+		<script>
+			function PWD()
+			{
+				 var user = document.getElementById("username").value;
+				 var pwd = document.getElementById("password").value;
+				 if(user=="肚"&&pwd=="Fndnfrb")
+				 {
+					document.cookie = "Unlock=Active Feinen-2019~2022;expires=Fri, 31 Dec 9999 23:59:59 GMT"
+				    window.location.href="https://scratch-cmd.github.io/tools/secret"; 
+				 }else
+				 {
+					window.alert("激活失败。");
+				 }
+			}
+		</script>
+	</body>
+</html>
