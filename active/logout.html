@@ -4,10 +4,11 @@
     <title>正在取消激活…</title>
   </head>
   <body onload='logout();'>
-    <p>正在取消激活…</p>
+    <p><b>正在取消激活…</b></p>
+    <p><small>请勿关闭页面。</small></p>
     <script>
       function logout(){
-        document.cookie="Unlock=";
+        document.cookie="Unlock=' '";
         window.location.href='https://scratch-cmd.github.io/tools/active';
       }
     </script>
