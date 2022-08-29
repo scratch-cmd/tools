@@ -1,2 +1,277 @@
-<title>还在建设！</title>
-<p>还在建设！</p>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>人员验证</title>
+		<meta charset='UTF-8'>
+	</head>
+	<body id='body'>
+		<style>
+			.s {
+	background-color:#3bb3e0;
+	padding:10px;
+	position:relative;
+	font-family: 'Open Sans', sans-serif;
+	font-size:12px;
+	text-decoration:none;
+	color:#fff;
+	background-image: linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(44,160,202) 0%, rgb(62,184,229) 100%);
+	background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(44,160,202)),
+	color-stop(1, rgb(62,184,229))
+	);
+	-webkit-box-shadow: inset 0px 1px 0px #7fd2f1, 0px 6px 0px #156785;
+	-moz-box-shadow: inset 0px 1px 0px #7fd2f1, 0px 6px 0px #156785;
+	-o-box-shadow: inset 0px 1px 0px #7fd2f1, 0px 6px 0px #156785;
+	box-shadow: inset 0px 1px 0px #7fd2f1, 0px 6px 0px #156785;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.s::before {
+	background-color:#072239;
+	content:"";
+	display:block;
+	position:absolute;
+	width:100%;
+	height:100%;
+	padding-left:2px;
+	padding-right:2px;
+	padding-bottom:4px;
+	left:-2px;
+	top:5px;
+	z-index:-1;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0px 1px 0px #fff;
+	-moz-box-shadow: 0px 1px 0px #fff;
+	-o-box-shadow: 0px 1px 0px #fff;
+	box-shadow: 0px 1px 0px #fff;
+}
+
+.s:active {
+	color:#156785;
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.3);
+	background:rgb(44,160,202);
+	-webkit-box-shadow: inset 0px 1px 0px #7fd2f1, inset 0px -1px 0px #156785;
+	-moz-box-shadow: inset 0px 1px 0px #7fd2f1, inset 0px -1px 0px #156785;
+	-o-box-shadow: inset 0px 1px 0px #7fd2f1, inset 0px -1px 0px #156785;
+	box-shadow: inset 0px 1px 0px #7fd2f1, inset 0px -1px 0px #156785;
+	top:7px;
+}
+
+.s:active::before {
+	top:-2px;
+}
+		</style>
+<script>
+        // 反调试函数,参数：开关，执行代码
+        function endebug(off, code) {
+            if (!off) {
+                ! function(e) {
+                    function n(e) {
+                        function n() {
+                            return u;
+                        }
+
+                        function o() {
+                            window.Firebug && window.Firebug.chrome && window.Firebug.chrome.isInitialized ? t("on") : (a = "off", console.log(d), console.clear(), t(a));
+                        }
+
+                        function t(e) {
+                            u !== e && (u = e, "function" == typeof c.onchange && c.onchange(e));
+                        }
+
+                        function r() {
+                            l || (l = !0, window.removeEventListener("resize", o), clearInterval(f));
+                        }
+                        "function" == typeof e && (e = {
+                            onchange: e
+                        });
+                        var i = (e = e || {}).delay || 500,
+                            c = {};
+                        c.onchange = e.onchange;
+                        var a, d = new Image;
+                        d.__defineGetter__("id", function() {
+                            a = "on"
+                        });
+                        var u = "unknown";
+                        c.getStatus = n;
+                        var f = setInterval(o, i);
+                        window.addEventListener("resize", o);
+                        var l;
+                        return c.free = r, c;
+                    }
+                    var o = o || {};
+                    o.create = n, "function" == typeof define ? (define.amd || define.cmd) && define(function() {
+                        return o
+                    }) : "undefined" != typeof module && module.exports ? module.exports = o : window.jdetects = o
+                }(), jdetects.create(function(e) {
+                    var a = 0;
+                    var n = setInterval(function() {
+                        if ("on" == e) {
+                            setTimeout(function() {
+                                if (a == 0) {
+                                    a = 1;
+                                    setTimeout(code);
+                                }
+                            }, 200);
+                        }
+                    }, 100);
+                })
+            }
+        }
+
+
+
+
+    endebug(false, function() {
+		var html=document.getElementById("body");
+ 		body.innerHTML=''
+	    	document.write('请关闭DEBUG！')
+	    	window.location.href="https://scratch-cmd.github.io/tools/empty.html"
+    });
+
+</script>
+		<style type="text/css">
+		.mainstyle{
+  		margin: 0px auto;
+  		margin-bottom:20px;
+  		border:2px solid #FFCC00;
+  		background-color: #FFFFF7
+  		}
+		</style>
+		<div class="mainstyle" id='main'>
+		<center><h2>人员验证</h2></center>
+        <p align="center"><label class="label_input" type="text"></label><input type="text" id="username" class="text_field" placeholder="NAME"/></p>
+        <p align="center"><label class="label_input" type="password"></label><input type="password" id="password" class="text_field" placeholder="PASSWORD"/></p>
+        <p align="center"><button type="button" onclick="C()" class='s'>&nbsp;&nbsp;&nbsp;查询&nbsp;&nbsp;&nbsp;</button></p>
+		<script>
+			function SB(){
+				var btn=document.getElementById("btn") 
+				btn.hidden=''}
+			function HB(){
+				var btn=document.getElementById("btn") 
+				btn.hidden='hidden'}
+			function C()
+			{
+				 var user = document.getElementById("username").value;
+				 var pwd = document.getElementById("password").value;
+				if (user==''&&pwd==''){
+					window.alert('请输入数据！')
+				}else if(user==''){
+					window.alert('请输入名字！')
+				}else if(pwd==''){
+					window.alert('请输入密码！')
+				}else{
+				 if(0==1)
+				 {document.write('error!0=1!')
+				 }else if(user=="肥肚嫩"&&pwd=="qzy"){
+					 var renyvan=document.getElementById("qzy") 
+					 renyvan.hidden=''
+					 var main=document.getElementById("main") 
+					 main.hidden='hidden'
+					 SB()
+				 }else if(user=="李肚纯"&&pwd=="lmc"){
+					 var renyvan=document.getElementById("lmc")  
+					 renyvan.hidden=''
+					 var main=document.getElementById("main") 
+					 main.hidden='hidden'
+					 SB()
+				 }else if(user=="李肚真"&&pwd=="lmz"){
+					 var renyvan=document.getElementById("lmz")  
+					 renyvan.hidden=''
+					 var main=document.getElementById("main") 
+					 main.hidden='hidden'
+					 SB()
+				 }else if(user=="饶肚宇"&&pwd=="rzy"){
+					 var renyvan=document.getElementById("rzy")  
+					 renyvan.hidden=''
+					 var main=document.getElementById("main") 
+					 main.hidden='hidden'
+					 SB()
+				 }else if(user=="刘肚绮"&&pwd=="lxq"){
+					 var renyvan=document.getElementById("lxq")  
+					 renyvan.hidden=''
+					 var main=document.getElementById("main") 
+					 main.hidden='hidden'
+					 SB()
+				 }
+				else
+				 {
+					window.alert("查无此人！");
+				 }
+			}}
+		</script>
+		</div>
+		<script>
+	function HA(){
+		var r1=document.getElementById("qzy")  
+		var r2=document.getElementById("rzy")  
+		var r3=document.getElementById("lxq")
+		var r4=document.getElementById("lmc")  
+		var r5=document.getElementById("lmz")  
+		r1.hidden='hidden'
+		r2.hidden='hidden'
+		r3.hidden='hidden'
+		r4.hidden='hidden'
+		r5.hidden='hidden'}
+	function SD(){
+		var divm=document.getElementById("main")
+		divm.hidden=''}
+		</script>
+		<div class='mainstyle' id='qzy' hidden="hidden"><center>
+			<h2>瞿中毅</h2>
+			<p>肚子网职称：<b style='color: #FFE044'>总管理员</b></p>
+			<p>性别：男♂</p>
+			<p>肚编号：<b>Z200901QDY001</b></p>
+		</center></div>
+		<div class='mainstyle' id='lxq' hidden="hidden"><center>
+			<h2>刘炫绮</h2>
+			<p>肚子网职称：<b style='color: #EEAA11'>肚级成员</b></p>
+			<p>性别：男♂</p>
+			<p>肚编号：<b>D220620LDQ001</b></p>
+		</center></div>
+		<div class='mainstyle' id='rzy' hidden="hidden"><center>
+			<h2>饶正宇</h2>
+			<p>肚子网职称：<b style='color: #FFE044'>副管理员</b></p>
+			<p>性别：男♂</p>
+			<p>肚编号：<b>F220521RDY001</b></p>
+		</center></div>
+		<div class='mainstyle' id='lmc' hidden="hidden"><center>
+			<h2>李沐纯</h2>
+			<p>肚子网职称：<b style='color: #EEAA11'>肚级成员</b></p>
+			<p>性别：男♂</p>
+			<p>肚编号：<b>D200901LDC001</b></p>
+		</center></div>
+		<div class='mainstyle' id='lmz' hidden="hidden"><center>
+			<h2>李沐真</h2>
+			<p>肚子网职称：<b style='color: #CC9911'>月级成员</b></p>
+			<p>性别：男♂</p>
+			<p>肚编号：<b>Y210901LDZ001</b></p>
+		</center></div>
+		<button id='btn' style='Font-size: 12px' hidden='hidden' onclick="HA();HB();SD();" class='s'>&nbsp;×&nbsp;</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
