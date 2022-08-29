@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <title>正在取消登录…</title>
+  </head>
+  <body onload='logout();'>
+    <p><b>正在取消登录…</b></p>
+    <p><small>请勿关闭页面。</small></p>
+    <script>
+      function logout(){
+        document.cookie="Login=No";
+        document.cookie="Password=None";
+        window.location.href='https://scratch-cmd.github.io/tools/bellynet';
+      }
+    </script>
+  </body>
+</html>
