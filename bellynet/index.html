@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title id='title'>肚子网</title>
+    <meta charset='UTF-8'>
+    <script>
+function getCookie(cookie_name)
+{if(cookie_name!=''){
+    var allcookies = document.cookie;
+    var cookie_pos = allcookies.indexOf(cookie_name);
+    if (cookie_pos != -1)
+    {
+        cookie_pos += cookie_name.length + 1;
+        var cookie_end = allcookies.indexOf(";", cookie_pos);
+  
+        if (cookie_end == -1)
+        {
+            cookie_end = allcookies.length;
+        }
+  
+        var value = unescape(allcookies.substring(cookie_pos, cookie_end));
+    }
+    return value;}
+}
+      function checkFB(){
+        if(getCookie('Login')=='Yes' && getCookie('Password')=='ffnn123'){
+          var main=document.getElementById("main");
+          main.hidden=""
+        }else{
+          var FB=document.getElementById("FB");
+          FB.hidden=''
+        }
+    </script>
+  </head>
+  <body onload='checkFB();'>
+    <div id='FB' hidden='hidden'>
+      <center>
+        <p><h1>403&nsbp;Forbidden</h1></p>
+        <p>未经允许，禁止进入！（NGINX）</p>
+      </center>
+    </div>
+    <div class='mainstyle' id='main' hidden='hidden'>
+      <center>
+        <p><h2>肚子网（还在建设中）</h2></p>
+        <p>肚-2022</p>
+        <p>（机密文件系统信息↓）</p>
+        <p>USERNAME:肚</p>
+        <p>PASSWORD:【机密信息，请联系管理员】</p>
+        <p>&nbsp;</p>
+        <p>队标：↓<p>
+        <p><image src='https://scratch-cmd.github.io/tools/bellynet/db.png'></image></p>
+        </center>
+    </div>
+  </body>
+</html
